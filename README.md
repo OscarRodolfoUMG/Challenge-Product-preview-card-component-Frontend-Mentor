@@ -24,9 +24,11 @@ Users should be able to:
 ### Screenshots
 
 Desk
+
 ![Screenshot](./screenshots/screenshot-desk.PNG)
 
 Mobile
+
 ![Screenshot](./screenshots/screenshot-mobile.PNG)
 
 
