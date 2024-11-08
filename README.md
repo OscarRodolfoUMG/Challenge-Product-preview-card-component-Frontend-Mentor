@@ -34,7 +34,7 @@ Mobile
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https:///)
+- Live Site URL: [GitHub Pages](https://oscarrodolfoumg.github.io/Challenge-Product-preview-card-component-Frontend-Mentor)
 
 ## My process
 
