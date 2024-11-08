@@ -1,0 +1,181 @@
+*{
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: hsl(0, 0%, 100%);
+  object-fit: contain;
+  margin: 1.5em 1em 0 1em;
+  padding-bottom: 1.5em;
+  border-radius: 0.7em;
+}
+
+.img-container{
+  background-image: url("../images/image-product-desktop.jpg");
+  border-radius: 0.7em 0.7em 0 0 ;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+article{
+  margin: 1.5em 1.5em 0 1.5em;
+}
+
+h1{
+  opacity: 90%;
+  font-family: Montserrat;
+  font-size: 0.9em;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+}
+
+h2{
+  opacity: 90%;
+  font-family: Fraunces;
+  color: hsl(212, 21%, 14%);
+  font-weight: 700;
+  font-size: 2.2em;
+  margin: 0.3em 0 0.3em 0;
+  line-height: 1em;
+}
+
+p{
+  color: hsl(228, 12%, 48%);
+  opacity: 80%;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.03em;
+  line-height: 1.7em;
+}
+
+.prices{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Fraunces;
+  justify-content: flex-start;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+.cost{
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5em;
+  font-weight: 700;
+  width: auto;
+  margin-right: 0.5em;
+}
+.discount{
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+  font-family: Montserrat;
+  
+}
+
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 0.6em;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1em;
+  color: hsl(0, 0%, 100%);
+  width: 100%;
+  padding: 1em;
+  img{
+    height: 1.3em;
+    margin-right: 10px;
+  }
+}
+
+button:hover{
+  background-color: hsl(151, 54%, 19%);
+  cursor: pointer;
+}
+
+.colors {
+  /* ### Primary */
+
+  color: hsl(158, 36%, 37%);
+  color: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  color: hsl(212, 21%, 14%);
+  color: hsl(228, 12%, 48%);
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  opacity: 50%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+
+@media (max-width: 414px) {
+  .img-container{
+    background-image: url("../images/image-product-mobile.jpg");
+    height: 18em;
+  }
+}
+
+@media (min-width: 415px) {
+  h1{
+    font-size: 0.8em;
+  }
+  h2{
+    margin: 0.7em 0 0.7em 0;
+    font-size: 2.5em;
+  }
+  .container{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .img-container{
+    border-radius: 0.7em 0 0 0.7em;
+    width: 20em;
+  }
+  article{
+    margin: 1.5em 2em 0 2em;
+    width: 17em;
+    margin-bottom: 2em;
+    
+  }
+}
+
+@media (max-width: 320px) {
+  .prices{
+    flex-direction: column-reverse;
+  }
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(../assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
